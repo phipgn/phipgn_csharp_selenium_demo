@@ -19,3 +19,8 @@ C:\workspace\phipgn_csharp_selenium_demo\phipgn_csharp_selenium_demo\obj\Debug\p
 C:\workspace\phipgn_csharp_selenium_demo\phipgn_csharp_selenium_demo\obj\Debug\phipgn_csharp_selenium_demo.csproj.CopyComplete
 C:\workspace\phipgn_csharp_selenium_demo\phipgn_csharp_selenium_demo\obj\Debug\phipgn_csharp_selenium_demo.dll
 C:\workspace\phipgn_csharp_selenium_demo\phipgn_csharp_selenium_demo\obj\Debug\phipgn_csharp_selenium_demo.pdb
+C:\workspace\phipgn_csharp_selenium_demo\phipgn_csharp_selenium_demo\bin\Debug\Dapper.dll
+C:\workspace\phipgn_csharp_selenium_demo\phipgn_csharp_selenium_demo\bin\Debug\Dapper.xml
+C:\workspace\phipgn_csharp_selenium_demo\phipgn_csharp_selenium_demo\bin\Debug\Newtonsoft.Json.dll
+C:\workspace\phipgn_csharp_selenium_demo\phipgn_csharp_selenium_demo\bin\Debug\Newtonsoft.Json.xml
+C:\workspace\phipgn_csharp_selenium_demo\phipgn_csharp_selenium_demo\bin\Debug\SeleniumExtras.WaitHelpers.dll

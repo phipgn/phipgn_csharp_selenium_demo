@@ -1,64 +1,70 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
+using phipgn_csharp_selenium_demo.WrapperFactory;
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
 using System.Configuration;
+using System.Threading;
+using SeleniumExtras.WaitHelpers;
 
 namespace phipgn_csharp_selenium_demo.TestCases
 {
     class BaseTest
     {
-        protected IWebDriver driver;
-
         [SetUp]
-        protected void setUp()
+        protected void SetUp()
         {
-            driver = new ChromeDriver();
-            Console.WriteLine("url=" + ConfigurationManager.AppSettings["URL"]);
+            BrowserFactory.InitBrowser(BrowserFactory.CHROME);
             GoToURL(ConfigurationManager.AppSettings["URL"]);
-            //GoToURL("https://www.amazon.com");
-            driver.Manage().Window.Maximize();
+            BrowserFactory.MaximizeWindow();
         }
 
         [TearDown]
-        protected void tearDown()
+        protected void TearDown()
         {
-            driver.Quit();
-        }
-
-        protected void WaitForElementPresent()
-        {
-
+            BrowserFactory.Close();
         }
 
         protected void WaitForElementDisplayed(IWebElement e)
         {
-            int retry = 0;
+            int attempt = 3;
+            bool retry = true;
             do
             {
-                Thread.Sleep(1000);
-                Console.WriteLine($"Element is displayed : {e.Displayed} : {retry}");
-                retry++;
-            } while (!e.Displayed && retry < 3);
+                try
+                {
+                    Thread.Sleep(1000);
+                    if (e.Displayed)
+                        retry = false;
+                }
+                catch (NoSuchElementException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    attempt--;
+                }
+            } while(retry && attempt > 0);
         }
 
         protected void WaitForElementClickable(IWebElement e)
         {
-
+            WebDriverWait wait = new WebDriverWait(GetDriver(), TimeSpan.FromSeconds(10));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(e));
         }
 
         protected void ClickToElement(IWebElement e)
         {
+            WaitForElementClickable(e);
             e.Click();
         }
 
         protected void GoToURL(String url)
         {
-            driver.Navigate().GoToUrl(url);
+            BrowserFactory.GoToURL(url);
+        }
+
+        public static IWebDriver GetDriver()
+        {
+            return BrowserFactory.GetDriver();
         }
 
         protected void SelectByText(IWebElement e, string text)
@@ -70,6 +76,12 @@ namespace phipgn_csharp_selenium_demo.TestCases
         protected void SetText(IWebElement e, string text)
         {
             e.SendKeys(text);
+        }
+
+        public void SelectSearchDropDownBox(IWebElement e, string text)
+        {
+            var selectElement = new SelectElement(e);
+            selectElement.SelectByText(text);
         }
     }
 }
