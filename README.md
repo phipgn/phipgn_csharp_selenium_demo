@@ -1,4 +1,4 @@
-# Selenium C# Demo
+# Selenium C# demo
 
 *This is a home assignment: To build a basic structure for a web-application automation testing framework.*
 
