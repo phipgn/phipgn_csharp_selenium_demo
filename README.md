@@ -1,6 +1,8 @@
 # Selenium C# Demo
 
-This is a home assignment: To build a basic structure for a web-application automation testing framework.
+*This is a home assignment: To build a basic structure for a web-application automation testing framework.*
+
+==> Reference: https://www.toolsqa.com/selenium-c-sharp/
 
 ## Applied:
 - PageObject design pattern.
@@ -9,9 +11,9 @@ This is a home assignment: To build a basic structure for a web-application auto
 - Page Generator.
 - Extent Report.
 
-==> Use this framework to do this Scripting Challenge #1.
+==> Use this framework to do this **Scripting challenge #1**.
 
-## Scripting chalenges 1:
+## Scripting challenge #1:
 
 Create Data Driven & Keywork Driven in Selenium WebDriver using NUnit to verify product title with scenario as below:
 1.	Open Chrome Browser
