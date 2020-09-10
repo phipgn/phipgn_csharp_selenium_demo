@@ -17,10 +17,8 @@ namespace phipgn_csharp_selenium_demo.TestDataAccess
             int i = 0;
             foreach (JsonTestData d in data)
             {
-                DataSet[i] = new object[] { data[i].Query, data[i].Expected };
-                i++;
-            }
-
+                DataSet[i++] = new object[] { d.Query, d.Expected };
+            }              
             return DataSet;
         }
     }
