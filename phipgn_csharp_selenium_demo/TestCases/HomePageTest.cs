@@ -1,10 +1,12 @@
-﻿using NUnit.Framework;
+﻿using AventStack.ExtentReports;
+using NUnit.Framework;
 using phipgn_csharp_selenium_demo.PageObjects;
 using phipgn_csharp_selenium_demo.TestDataAccess;
 using System;
 
 namespace phipgn_csharp_selenium_demo.TestCases
 {
+    [TestFixture]
     class HomePageTest : BaseTest
     {
 
