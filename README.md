@@ -2,7 +2,7 @@
 
 *This is a home assignment: To build a basic structure for a web-application automation testing framework.*
 
-==> Reference: https://www.toolsqa.com/selenium-c-sharp/
+--> Reference: https://www.toolsqa.com/selenium-c-sharp/
 
 ## Applied:
 - PageObject design pattern.
@@ -11,7 +11,7 @@
 - Page Generator.
 - Extent Report.
 
-==> Use this framework to do this **Scripting challenge #1**.
+--> Use this framework to do this **Scripting challenge #1**.
 
 ## Scripting challenge #1:
 
@@ -43,7 +43,7 @@ Create Data Driven & Keywork Driven in Selenium WebDriver using NUnit to verify 
 	- Data 2: Test Automation using Selenium Webdriver 3.0 with C# => title = "Test Automation using Selenium Webdriver 3.0 with C#")
 	- Data 3: Learn Selenium: => title = "Learn Selenium: Build data-driven test frameworks for mobile and web applications with Selenium Web Driver 3"
 	
-==> Test case should run all test data
+--> Test case should run against all test data.
 
 ## Demo videos:
 - Scripting challenge #1: https://www.youtube.com/watch?v=x_M4louXJXA
