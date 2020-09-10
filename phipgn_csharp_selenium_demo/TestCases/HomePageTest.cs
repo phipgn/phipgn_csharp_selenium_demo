@@ -10,7 +10,7 @@ namespace phipgn_csharp_selenium_demo.TestCases
     class HomePageTest : BaseTest
     {
 
-        private static object[] DataSet = JsonTestData.GetDataSet();
+        private static object[] DataSet = JsonDataAccess.GetDataSet();
 
         [Test, TestCaseSource("DataSet")]
         public void Test01(string query, string expected)

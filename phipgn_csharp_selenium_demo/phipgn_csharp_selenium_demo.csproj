@@ -457,15 +457,15 @@
     <Compile Include="TestCases\BaseTest.cs" />
     <Compile Include="TestCases\HomePageTest.cs" />
     <Compile Include="TestDataAccess\ExcelDataAccess.cs" />
-    <Compile Include="TestDataAccess\JsonTestData.cs" />
+    <Compile Include="TestDataAccess\JsonDataAccess.cs" />
     <Compile Include="TestDataAccess\ExcelTestData.cs" />
-    <Compile Include="TestDataAccess\TestData.cs" />
+    <Compile Include="TestDataAccess\JsonTestData.cs" />
     <Compile Include="WrapperFactory\BrowserFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="TestDataAccess\JsonTestData.json" />
+    <None Include="TestDataAccess\TestData.json" />
     <None Include="TestDataAccess\TestData.xlsx" />
   </ItemGroup>
   <ItemGroup>
