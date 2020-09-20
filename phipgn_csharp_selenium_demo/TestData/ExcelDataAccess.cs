@@ -10,7 +10,7 @@ namespace phipgn_csharp_selenium_demo.TestDataAccess
     {
         public static string TestDataFileConnection()
         {
-            var fileName = ConfigurationManager.AppSettings["TestDataSheetPath"];
+            var fileName = ConfigurationManager.AppSettings["ExcelDataFile"];
             var con = string.Format(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source = {0}; Extended Properties=Excel 12.0;", fileName);
             return con;
         }

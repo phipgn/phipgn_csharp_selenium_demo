@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using phipgn_csharp_selenium_demo.WrapperFactory;
+using phipgn_csharp_selenium_demo.Utilities;
 using System;
 using System.Configuration;
 using System.Threading;

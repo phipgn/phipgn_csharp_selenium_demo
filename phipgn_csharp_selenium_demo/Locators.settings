@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="phipgn_csharp_selenium_demo" GeneratedClassName="Locators">
+  <Profiles />
+  <Settings>
+    <Setting Name="SearchBox" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">//input[@id='twotabsearchtextbox']</Value>
+    </Setting>
+    <Setting Name="SearchDropdownBox" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//*[@id='searchDropdownBox']</Value>
+    </Setting>
+    <Setting Name="BtnSearch" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//input[@value='Go']</Value>
+    </Setting>
+    <Setting Name="FirstResult" Type="System.String" Scope="User">
+      <Value Profile="(Default)">((//span[@cel_widget_id='MAIN-SEARCH_RESULTS'])[1]//a)[2]</Value>
+    </Setting>
+    <Setting Name="ProductTitle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//*[@id='productTitle']</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

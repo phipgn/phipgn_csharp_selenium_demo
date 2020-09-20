@@ -3,7 +3,7 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using System;
 
-namespace phipgn_csharp_selenium_demo.WrapperFactory
+namespace phipgn_csharp_selenium_demo.Utilities
 {
     class BrowserFactory
     {
