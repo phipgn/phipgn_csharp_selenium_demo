@@ -8,6 +8,7 @@ namespace phipgn_csharp_selenium_demo.Utilities
     {
         public static ExtentReports _extent = new ExtentReports();
         public static ExtentTest _test;
+        public static string ErrLog = "";
 
         public static void GetTest()
         {

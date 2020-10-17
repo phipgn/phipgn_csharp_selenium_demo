@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
 
-namespace phipgn_csharp_selenium_demo.TestDataAccess
+namespace phipgn_csharp_selenium_demo.Utilities
 {
-    class JsonDataAccess
+    class JsonUtil
     {
         public static object[] GetDataSet()
         {
@@ -20,6 +20,12 @@ namespace phipgn_csharp_selenium_demo.TestDataAccess
                 DataSet[i++] = new object[] { d.Query, d.Expected };
             }              
             return DataSet;
+        }
+
+        private class JsonTestData
+        {
+            public string Query { get; set; }
+            public string Expected { get; set; }
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using AventStack.ExtentReports;
 using NUnit.Framework;
 using phipgn_csharp_selenium_demo.PageObjects;
-using phipgn_csharp_selenium_demo.TestDataAccess;
+using phipgn_csharp_selenium_demo.Utilities;
 using System;
 
 namespace phipgn_csharp_selenium_demo.TestCases
@@ -10,7 +10,7 @@ namespace phipgn_csharp_selenium_demo.TestCases
     class HomePageTest : BaseTest
     {
 
-        private static object[] DataSet = JsonDataAccess.GetDataSet();
+        private static object[] DataSet = JsonUtil.GetDataSet();
 
         [Test, TestCaseSource("DataSet")]
         public void Test01(string query, string expected)

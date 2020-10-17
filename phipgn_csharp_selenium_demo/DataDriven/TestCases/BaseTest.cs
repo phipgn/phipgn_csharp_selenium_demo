@@ -1,14 +1,14 @@
-﻿using NUnit.Framework;
+﻿using AventStack.ExtentReports;
+using AventStack.ExtentReports.Reporter;
+using NUnit.Framework;
+using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using phipgn_csharp_selenium_demo.Utilities;
+using phipgn_csharp_selenium_demo.Common;
 using System;
 using System.Configuration;
-using System.Threading;
-using AventStack.ExtentReports;
-using AventStack.ExtentReports.Reporter;
 using System.IO;
-using NUnit.Framework.Interfaces;
+using System.Threading;
 
 namespace phipgn_csharp_selenium_demo.TestCases
 {

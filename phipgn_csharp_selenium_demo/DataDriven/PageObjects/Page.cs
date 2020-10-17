@@ -1,4 +1,4 @@
-﻿using phipgn_csharp_selenium_demo.Utilities;
+﻿using phipgn_csharp_selenium_demo.Common;
 using SeleniumExtras.PageObjects;
 
 namespace phipgn_csharp_selenium_demo.PageObjects

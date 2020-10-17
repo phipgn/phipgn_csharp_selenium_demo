@@ -12,7 +12,7 @@
       <Value Profile="(Default)">//input[@value='Go']</Value>
     </Setting>
     <Setting Name="FirstResult" Type="System.String" Scope="User">
-      <Value Profile="(Default)">((//span[@cel_widget_id='MAIN-SEARCH_RESULTS'])[1]//a)[2]</Value>
+      <Value Profile="(Default)">(//span[contains(@cel_widget_id, 'MAIN-SEARCH_RESULTS')])[1]//h2/a</Value>
     </Setting>
     <Setting Name="ProductTitle" Type="System.String" Scope="User">
       <Value Profile="(Default)">//*[@id='productTitle']</Value>

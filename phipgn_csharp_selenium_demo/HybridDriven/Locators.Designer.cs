@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace phipgn_csharp_selenium_demo {
+namespace phipgn_csharp_selenium_demo.HybridDriven {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -58,7 +58,7 @@ namespace phipgn_csharp_selenium_demo {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("((//span[@cel_widget_id=\'MAIN-SEARCH_RESULTS\'])[1]//a)[2]")]
+        [global::System.Configuration.DefaultSettingValueAttribute("(//span[contains(@cel_widget_id, \'MAIN-SEARCH_RESULTS\')])[1]//h2/a")]
         public string FirstResult {
             get {
                 return ((string)(this["FirstResult"]));
